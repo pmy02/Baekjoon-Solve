@@ -6,7 +6,7 @@ long long int sum;
 
 int main()
 {
-    scanf("%d",&t);
+    cin>>t;
     for(i=0;i<t;i++){
         scanf("%d %d",&n,&m);
         sum=1,mo=m,ja=n,p=1;
