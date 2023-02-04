@@ -7,7 +7,6 @@ int main()
 {
     cin>>n;
     for(i=1;i<=n;i++){
-        
         printf("Material Management %d\n",i);
         printf("Classification ---- End!\n");
     }
