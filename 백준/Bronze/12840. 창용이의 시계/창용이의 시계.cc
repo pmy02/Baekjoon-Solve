@@ -12,14 +12,13 @@ int main()
         scanf("%d",&t);
 
         if(t==3) printf("%d %d %d\n",sum/3600,(sum%3600)/60,sum%60);
-        else if(t==2){
-            scanf("%d",&c);
-            sum=(sum-c)%86400;
-            if(sum<0) sum+=86400;
-        }
         else{
             scanf("%d",&c);
-            sum=(sum+c)%86400;
+            
+            if(t==2) sum=(sum-c)%86400;
+            else sum=(sum+c)%86400;
+
+            if(sum<0) sum+=86400;
         }
     }
 
